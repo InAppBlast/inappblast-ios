@@ -12,7 +12,7 @@
 
 		#import <PushPanel/PushPanel.h>
 
-4. You can change PushPanel log level by calling. See PushPanel.h for more details. By default there is no logging.
+4. You can change PushPanel log level by calling setLogLevel: method. See PushPanel.h for more details. By default there is no logging.
 
 		[PushPanel setLogLevel:PushPanelLogLevelOnlyErrors];
 
