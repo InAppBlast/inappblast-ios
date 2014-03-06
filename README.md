@@ -1,3 +1,5 @@
+# Tutorial
+
 1. Drag PushPanel.framework from Finder to your XCode project (into YourApp -> Frameworks folder on the left). Click OK.
 
 2. Request <your_project_token> string for you project (just drop us an email to hi@pushpanel.io to get your token). Somewhere at the top of AppDelegate.m add the following line
