@@ -1,16 +1,14 @@
-# PushPanel iOS SDK integration tutorial
-
 1. Drag PushPanel.framework from Finder to your XCode project (into YourApp -> Frameworks folder on the left). Click OK.
 
-2. Request <your_project_token> string for you project. Somewhere at the top of AppDelegate.m add the following line
+2. Request <your_project_token> string for you project (just drop us an email to hi@pushpanel.io to get your token). Somewhere at the top of AppDelegate.m add the following line
 
 
-#define PUSHPANEL_TOKEN @"<your_project_token>"
+		#define PUSHPANEL_TOKEN @"<your_project_token>"
 
 
 3. In all files where you want to use PushPanel, import it first by adding the following line to your code
 
-#import <PushPanel/PushPanel.h>
+		#import <PushPanel/PushPanel.h>
 
 4. You can change PushPanel log level by calling. See PushPanel.h for more details. By default there is no logging.
 		[PushPanel setLogLevel:PushPanelLogLevelOnlyErrors];
