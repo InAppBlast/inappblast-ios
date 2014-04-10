@@ -8,19 +8,21 @@
 		#define PUSHPANEL_TOKEN @"**your_project_token**"
 
 
-3. In all files where you want to use PushPanel, import it first by adding the following line to your code:
+3. Add following frameworks to your project: AdSupport.framework, UIKit.framework, Foundation.framework.
+
+4. In all files where you want to use PushPanel, import it first by adding the following line to your code:
 
 		#import <PushPanel/PushPanel.h>
 
-4. You can change PushPanel log level by calling setLogLevel: method. See PushPanel.h for more details. By default there is no logging.
+5. You can change PushPanel log level by calling setLogLevel: method. See PushPanel.h for more details. By default there is no logging.
 
 		[PushPanel setLogLevel:PushPanelLogLevelOnlyErrors];
 
-5. In your AppDelegate.m inside the method application:didFinishLaunchingWithOptions:launchOptions: add the following line:
+6. In your AppDelegate.m inside the method application:didFinishLaunchingWithOptions:launchOptions: add the following line:
 
 		[PushPanel initSharedInstanceWithToken:PUSHPANEL_TOKEN];
 
-6. To identify your user within PushPanel (either you use user authentication method or no authentication at all), put the following line where appropriate (as a way of "identifying" your user inside PushPanel object).
+7. To identify your user within PushPanel (either you use user authentication method or no authentication at all), put the following line where appropriate (as a way of "identifying" your user inside PushPanel object).
 
 		[[PushPanel sharedInstance] registerUser:**unique_id**];
 
@@ -28,10 +30,10 @@
 
 	As **unique_id** you can use your user ID from your database. If you don't have backend, then you can use whatever you want as user identifier, for example, device ID.
 
-7. In the place of your app, where you want to handle "Log out" action for your user add the following line:
+8. In the place of your app, where you want to handle "Log out" action for your user add the following line:
 
 		[[PushPanel sharedInstance] logoutUser];
 
 	After calling this, your app stops receiving notifications for this user, until you call registerUser: for another user session.
 
-8. Done!
+9. Done!
