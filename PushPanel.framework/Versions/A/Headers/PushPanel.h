@@ -20,6 +20,8 @@ typedef enum {
 + (void) setLogLevel:(PushPanelLogLevel)logLevel;
 + (PushPanelLogLevel) getLogLevel;
 - (void) registerUser:(NSString *)uniqueUserId;
+- (void) setUserProperties:(NSDictionary *)userProperties;
+- (void) incUserProperties:(NSDictionary *)userProperties;
 - (NSString *) currentUserId;
 - (void) logoutUser;
 
