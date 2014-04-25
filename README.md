@@ -2,10 +2,10 @@
 
 1. Drag PushPanel.framework from Finder to your XCode project (into YourApp -> Frameworks folder on the left). Click OK.
 
-2. Get your project's **token** string (just drop us an email to hi@pushpanel.io to get your token). Somewhere at the top of AppDelegate.m add the following line
+2. Get your project's **key** string (just drop us an email to hi@pushpanel.io to get your key). Somewhere at the top of AppDelegate.m add the following line
 
 
-		#define PUSHPANEL_TOKEN @"**your_project_token**"
+		#define PUSHPANEL_TOKEN @"**your_project_key**"
 
 
 3. Add following frameworks to your project: AdSupport.framework, UIKit.framework, Foundation.framework.
@@ -20,7 +20,7 @@
 
 6. In your AppDelegate.m inside the method application:didFinishLaunchingWithOptions:launchOptions: add the following line:
 
-		[PushPanel initSharedInstanceWithToken:PUSHPANEL_TOKEN];
+		[PushPanel initSharedInstanceWithToken:PUSHPANEL_KEY];
 
 7. To identify your user within PushPanel (either you use user authentication method or no authentication at all), put the following line where appropriate (as a way of "identifying" your user inside PushPanel object).
 
