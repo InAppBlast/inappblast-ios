@@ -22,6 +22,7 @@ typedef enum {
 - (void) registerUser:(NSString *)uniqueUserId;
 - (void) setUserProperties:(NSDictionary *)userProperties;
 - (void) incUserProperties:(NSDictionary *)userProperties;
+- (void) event:(NSString *)eventName;
 - (NSString *) currentUserId;
 - (void) logoutUser;
 
