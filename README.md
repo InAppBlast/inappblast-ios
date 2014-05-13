@@ -36,4 +36,4 @@
 
 	After calling this, your app stops receiving notifications for this user, until you call registerUser: for another user session.
 
-9. Done!
+9. Done! Still having questions? Summon a human at help@inappblast.com
