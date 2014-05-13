@@ -2,7 +2,7 @@
 
 1. Drag PushPanel.framework from Finder to your XCode project (into YourApp -> Frameworks folder on the left). Click OK.
 
-2. Get your project's **key** string (just drop us an email to hi@pushpanel.io to get your key). Somewhere at the top of AppDelegate.m add the following line
+2. Get your project's **key** string (just drop us an email to help@inappblast.com to get your key). Somewhere at the top of AppDelegate.m add the following line
 
 
 		#define PUSHPANEL_TOKEN @"**your_project_key**"
