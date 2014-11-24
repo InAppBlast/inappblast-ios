@@ -22,6 +22,7 @@ typedef enum {
 + (void) logError:(NSString *)message;
 + (void) logOther:(NSString *)message;
 + (void) setExternalLogBlock:(void (^)(NSString * message))logBlock;
+- (void) addPushDeviceToken:(NSData *)token;
 - (void) registerUser:(NSString *)uniqueUserId;
 - (void) setUserProperties:(NSDictionary *)userProperties;
 - (void) incUserProperties:(NSDictionary *)userProperties;
