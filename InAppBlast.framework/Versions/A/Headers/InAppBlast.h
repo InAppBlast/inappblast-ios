@@ -21,6 +21,7 @@ typedef enum {
 + (InAppBlastLogLevel) getLogLevel;
 + (void) logError:(NSString *)message;
 + (void) logOther:(NSString *)message;
+- (void) sendLog;
 + (void) setExternalLogBlock:(void (^)(NSString * message))logBlock;
 - (void) checkNotificationNow;
 - (void) addPushDeviceToken:(NSData *)token;
