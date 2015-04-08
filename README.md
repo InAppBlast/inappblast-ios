@@ -1,5 +1,4 @@
-## Tutorial
-#Version 1.3.3
+##Version 1.3.3
 
 1. Drag InAppBlast.framework from Finder to your XCode project (into YourApp -> Frameworks folder on the left). Click OK.
 
