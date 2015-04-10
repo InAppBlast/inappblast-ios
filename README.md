@@ -1,4 +1,4 @@
-##Version 1.3.3
+##Version 1.3.4
 
 Integration docs:
 http://inappblast.readme.io/v1.0/docs/ios-integration
