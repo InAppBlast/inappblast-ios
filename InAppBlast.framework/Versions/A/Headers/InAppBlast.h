@@ -32,6 +32,7 @@ typedef enum {
 - (void) incUserProperties:(NSDictionary *)userProperties;
 - (void) event:(NSString *)eventName properties:(NSDictionary *)properties;
 - (void) makePurchase:(double)value;
+- (void) sendPushToClientWithId:(NSString *)clientId message:(NSString *)message;
 - (NSString *) currentUserId;
 - (void) logoutUser;
 
